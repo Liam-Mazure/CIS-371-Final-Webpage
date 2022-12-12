@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+:root{
+    --textcolor: orangered;
+    --textcolorlight: orange;
+    --secondarycolor: #034401;
+}
+
+html{
+    background-image: url("./images/Foggy_trees.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.Account, .Calender, .CreateUser, .Home, .Initial, .Login, .Map {
+    padding: 0px;
+}
+
+
+.start{
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    text-align: center;
+    
+}
+
+#loginbtn , #createbtn, .login_submit{
+    color: var(--textcolor);
+    background-color: var(--secondarycolor);
+    font-family: 'Sansita Swashed', cursive;
+    border-color: var(#034401);
+}
+
+#loginbtn:hover , #createbtn:hover, .login_submit:hover{
+    color: var(--textcolorlight);
+    background-color: var(--secondarycolor);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.accountForm{
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    text-align: center;
+}
+
+.user_profile{
+    display: flex;
+    justify-content:space-around;
+}
+
+#user_pic{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    margin: 20px;
+}
+
+.userTrack{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userTrack h2{
+    margin: 20px;
+}
+
+.Login{
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    text-align: center;
+}
+
+.home, .userAccount{
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    text-align: center;
+    background-image: url("./images/Foggy_trees.jpg");
+
+}
+
+#home_title, #user_title{
+    font-size: 80px;
+}
+
+#home_text{
+    font-size: 50px;
+}
+
+#createPlanbtn{
+    width: 25%;
+    font-size: 25px;
+}
+
+.planForm{
+    padding: 30px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+.map-container{
+    width: 100%;
+    height: 90vh;
+}
+
+.loading{
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    text-align: center;
+}
+
+.places-container{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 300px;
+}
+
+.combobox-input{
+    width: 60%;
+    padding: 0.5rem;
+}
+
+.calendar{
+    height: 500;
+    margin: 50px;
+    color: var(--textcolor);
+    text-shadow: 2px 2px 5px var(--secondarycolor);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#cal_style{
+    color: var(--textcolor);
+}
+
+#event_title{
+    width: 20%;
+    margin-right: 10px;
+    color: var(--textcolor);
+}
+
+#start_date{
+    margin-right: 10px;
+}
+
+#add_eventbtn, #crtUser_submit_btn, #login_submit, #createPlanbtn, #createbtn, #loginbtn, #rn_log, #edit_Acount, .save{
+    border-color: var(--secondarycolor);
+    margin: 10px;
+    color: var(--textcolor);
+    background-color: var(--secondarycolor);
+    font-family: 'Sansita Swashed', cursive;
+    border-radius: 25px;
+}
+
+#add_eventbtn:hover, #crtUser_submit_btn:hover, #login_submit:hover, #createPlanbtn:hover, #createbtn:hover, #login_submit:hover, #loginbtn:hover, .save:hover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--textcolorlight);
+    background-color: var(--secondarycolor);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--secondarycolor);
+    color: var(--textcolor)
+}
+
+#nav_logo{
+    color: var(--textcolor);
+    font-family: 'Sansita Swashed', cursive;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#nav_logo:hover{
+    color: var(--textcolorlight);
+}
+
+nav a{
+    margin:0 2rem;
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--textcolor);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--textcolorlight);
+}
+
+.nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textcolor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--secondarycolor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+
+.log_list{
+    background-image: url("./images/Foggy_trees.jpg");
+}
+
+.single_enrty{
+    background-color: var(--secondarycolor);
+    margin: 5px;
+    border-radius: 30px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.log_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.log_list{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.single_entry.new{
+    background-color: #087a04;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+#entry_text{
+    border: none;
+    resize: none;
+    background-color: #087a04;
+    color: var(--textcolor);
+}
+
+#entry_text:focus{
+    outline: none;
+}
+
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.delete_icon:hover{
+    color: var(--textcolorlight);
+    cursor: pointer;
+}
+
+
+
